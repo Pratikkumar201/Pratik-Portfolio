@@ -3,7 +3,7 @@ const projects = [
   {
     slug: "ai-powered-expert-selection",
     title: "AI Expert Selection System",
-    image: "/project-meity-ai.jpg", // Placeholder or existing
+    // image: "/project-meity-ai.jpg", // Placeholder or existing
     description: `
 Built for NeGD, MeitY (Govt. of India). Slashed panel generation time from hours to <5 minutes.
 
@@ -20,7 +20,7 @@ BERT, Sentence-BERT, FAISS Vector Search, Linear Programming, Python, SQL.
   {
     slug: "ai-office-management-system",
     title: "AI Office Digitization Platform",
-    image: "/project-office-ai.jpg",
+    // image: "/project-office-ai.jpg",
     description: `
 LLM-powered automation for Ministry of Youth Affairs & Sports (Govt. of India). Boosted task capture to 95%.
 
@@ -38,7 +38,7 @@ LangChain, LangGraph, WhatsApp Bot API, Claude API, NestJS, pgVector, AWS (EC2/S
   {
     slug: "advanced-agentic-ai",
     title: "Advanced Multi-Agent System",
-    image: "/project-agentic.jpg",
+    // image: "/project-agentic.jpg",
     description: `
 Personal project building a complex multi-agent orchestration system using LangGraph.
 
@@ -49,13 +49,13 @@ LangGraph, DAG-based pipelines, Tool-calling Agents, State Machines, FastAPI.
 - Implemented agent-to-agent handoffs and human-in-the-loop checkpoints.
 - State-managed reasoning tasks exposed as REST API.
     `.trim(),
-    githubLink: "https://github.com/Pratikkumar201/agentic-ai",
+    githubLink: "https://github.com/Pratikkumar201",
     tags: ["LangGraph", "Multi-Agent", "FastAPI"]
   },
   {
     slug: "langchain-rag-assistant",
     title: "Enterprise RAG Assistant",
-    image: "/project-rag.jpg",
+    // image: "/project-rag.jpg",
     description: `
 Designed an enterprise-grade RAG pipeline for context-aware multi-turn QA.
 
@@ -66,7 +66,7 @@ LangChain, Sentence-BERT, pgVector, Python, Prompt Engineering.
 - Integrated web search tools and conversation memory chains.
 - Evaluated with LLM evaluation metrics for accuracy and hallucination control.
     `.trim(),
-    githubLink: "https://github.com/Pratikkumar201/rag-assistant",
+    githubLink: "https://github.com/Pratikkumar201",
     tags: ["RAG", "LLM", "FAISS", "Python"]
   },
   {
@@ -84,7 +84,7 @@ Next.js, React, Tailwind CSS, Strapi, PostgreSQL, Redis, GraphQL.
 - Dynamic content management for institutional news and events.
     `.trim(),
     liveLink: "https://news.bhu.ac.in",
-    githubLink: "https://github.com/Pratikkumar201/bhu-news",
+    githubLink: "https://github.com/Pratikkumar201",
     tags: ["Next.js", "Strapi", "Redis", "FullStack"]
   },
   {
@@ -101,7 +101,7 @@ Python, Scikit-learn, Pandas, Streamlit, TF-IDF.
 - 70% reduction in manual speech analysis time.
 - Automated clustering of topics and speaker sentiment trends.
     `.trim(),
-    githubLink: "https://github.com/Pratikkumar201/speech-analyzer",
+    githubLink: "https://github.com/Pratikkumar201",
     tags: ["NLP", "Python", "SentimentAnalysis"]
   }
 ];
