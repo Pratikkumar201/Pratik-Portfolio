@@ -69,10 +69,6 @@ export default function Hero() {
         className="flex-1 space-y-8 text-center md:text-left"
       >
         <motion.div variants={itemVariants} className="space-y-4">
-          <h2 className="text-accent-cyan font-mono tracking-widest text-sm md:text-base uppercase flex items-center justify-center md:justify-start gap-2">
-            <span className="w-2 h-2 bg-accent-cyan rounded-full animate-pulse" />
-            Available for Global Opportunities
-          </h2>
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none">
             PRATIK <span className="text-gradient block md:inline">KUMAR</span>
           </h1>

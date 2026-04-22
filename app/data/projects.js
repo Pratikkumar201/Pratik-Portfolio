@@ -1,88 +1,125 @@
 // app/data/projects.js
 const projects = [
   {
-    slug: "ai-powered-expert-selection",
-    title: "AI Expert Selection System",
-    // image: "/project-meity-ai.jpg", // Placeholder or existing
+    slug: "ai-expert-selection-system",
+    title: "Expert Intelligence AI",
+    image: "/ai-expert.png",
     description: `
-Built for NeGD, MeitY (Govt. of India). Slashed panel generation time from hours to <5 minutes.
+An AI-driven expert selection platform developed for NeGD (Ministry of Electronics & IT, Government of India) to automate and optimize panel formation for high-stakes government evaluations.
 
-🛠️ Technologies Used
-BERT, Sentence-BERT, FAISS Vector Search, Linear Programming, Python, SQL.
+⚡ Key Impact
+- Reduced panel generation time from hours to under 5 minutes
+- Cut manual shortlisting effort by 80%
+- Processed and analyzed 17,000+ expert profiles with high accuracy
 
-💡 Key Impact
-- 80% reduction in manual shortlisting effort for central recruitment.
-- Multi-stage pipeline: SQL Filtering -> Semantic Retrieval -> Random Forest Ranking -> Diversity Constraint Optimization.
-    `.trim(),
+🧠 Core System
+- **Intelligent Filtering Layer**: SQL-based pre-filtering to narrow candidate pool
+- **Semantic Matching Engine**: BERT + Sentence-BERT embeddings with FAISS for precise expertise alignment
+- **Ranking Model**: Random Forest-based scoring for relevance and suitability
+- **Optimization Engine**: Linear Programming (PuLP) to enforce diversity, domain coverage, and panel constraints
+
+🛠️ Tech Stack
+Python · BERT · Sentence-BERT · FAISS · Scikit-learn · PuLP · SQL
+
+💡 Outcome
+Replaced a fully manual, time-intensive selection workflow with a fast, explainable, and mathematically optimized AI system, enabling data-driven decision-making at a national scale.
+`.trim(),
     githubLink: "",
-    tags: ["GenAI", "BERT", "FAISS", "Python"]
+    tags: ["GenAI", "BERT", "FAISS", "Optimization", "Python"]
   },
   {
-    slug: "ai-office-management-system",
-    title: "AI Office Digitization Platform",
-    // image: "/project-office-ai.jpg",
+    slug: "ai-governance-os",
+    title: "AI Governance OS",
+    image: "",
     description: `
-LLM-powered automation for Ministry of Youth Affairs & Sports (Govt. of India). Boosted task capture to 95%.
+An AI-powered operating system designed for the Joint Secretary’s Office (Ministry of Youth Affairs & Sports, Government of India) to transform fragmented, manual workflows into a structured, intelligent, and audit-ready system.
 
-🛠️ Technologies Used
-LangChain, LangGraph, WhatsApp Bot API, Claude API, NestJS, pgVector, AWS (EC2/S3/RDS), Docker.
+⚡ Key Impact
+- Achieved 95% task capture from previously unstructured WhatsApp/verbal workflows
+- Enabled "Zero Browser" experience via automated WhatsApp briefings for senior leadership
+- Reduced task leakage through intelligent reminders and escalation pipelines
 
-💡 Key Impact
-- Agentic workflows for natural language task parsing.
-- 7-level automated reminder cascade via Supabase Edge Functions.
-- Secure API design following OWASP standards.
-    `.trim(),
+🧠 Core Systems
+- **AI Task Capture Agent**: WhatsApp-based interface for real-time task logging, updates, and queries
+- **Active Reminder Engine**: Multi-level escalation system with automated follow-ups and DO letter drafting
+- **People Intelligence Layer**: RACI-based workload tracking and heatmaps to prevent bottlenecks
+- **Document Automation**: Generation of official documents (OMs, DO letters, PQ replies) with .docx export
+- **Institutional Memory Engine**: Vector-powered policy Q&A for instant retrieval of departmental knowledge
+
+🛠️ Tech Stack
+Claude Sonnet · Supabase (pg_cron, Edge Functions) · LangGraph · Node.js · WhatsApp API
+
+💡 Outcome
+Transformed a manual administrative environment into an AI-assisted governance system with real-time visibility, accountability, and decision support.
+`.trim(),
     githubLink: "",
-    tags: ["LangChain", "LangGraph", "Claude", "NestJS"]
+    tags: ["Claude-Sonnet", "Supabase", "LangGraph", "WhatsApp-Bot", "Node.js"]
   },
   {
     slug: "advanced-agentic-ai",
     title: "Advanced Multi-Agent System",
-    // image: "/project-agentic.jpg",
+    image: "",
     description: `
-Personal project building a complex multi-agent orchestration system using LangGraph.
+A sophisticated multi-agent orchestration system building complex reasoning capabilities into autonomous agents.
 
-🛠️ Technologies Used
-LangGraph, DAG-based pipelines, Tool-calling Agents, State Machines, FastAPI.
+🛠️ Technologies & Methodology
+- LangGraph DAG-based pipelines with tool-calling agents.
+- Memory management and state machines for multi-step reasoning tasks.
+- Implemented agent-to-agent handoffs and conditional routing.
+- Human-in-the-loop checkpoints for critical reasoning steps.
+- Exposed as a high-performance REST API via FastAPI.
 
 💡 Key Impact
-- Implemented agent-to-agent handoffs and human-in-the-loop checkpoints.
-- State-managed reasoning tasks exposed as REST API.
+- Demonstrates advanced mastery of agentic AI patterns and orchestration.
+- Robust state management for long-running reasoning tasks.
     `.trim(),
     githubLink: "https://github.com/Pratikkumar201",
-    tags: ["LangGraph", "Multi-Agent", "FastAPI"]
+    tags: ["LangGraph", "Multi-Agent", "FastAPI", "Python"]
   },
   {
     slug: "langchain-rag-assistant",
     title: "Enterprise RAG Assistant",
-    // image: "/project-rag.jpg",
+    image: "",
     description: `
-Designed an enterprise-grade RAG pipeline for context-aware multi-turn QA.
+An enterprise-grade RAG pipeline designed for context-aware, multi-turn institutional knowledge retrieval.
 
-🛠️ Technologies Used
-LangChain, Sentence-BERT, pgVector, Python, Prompt Engineering.
+🛠️ Technologies & Methodology
+- Full pipeline: Document ingestion -> Chunking -> Embedding (Sentence-BERT) -> pgVector storage.
+- Semantic retrieval and LLM response generation with conversation memory chains.
+- Integration of web search tools and prompt engineering for factual accuracy.
+- Evaluated using LLM evaluation metrics to control hallucinations.
 
 💡 Key Impact
-- Integrated web search tools and conversation memory chains.
-- Evaluated with LLM evaluation metrics for accuracy and hallucination control.
+- Achieves high accuracy in multi-turn Q&A scenarios.
+- Demonstrates a production-ready approach to RAG evaluation and monitoring.
     `.trim(),
     githubLink: "https://github.com/Pratikkumar201",
-    tags: ["RAG", "LLM", "FAISS", "Python"]
+    tags: ["RAG", "LLM", "FAISS", "Python", "LangChain"]
   },
   {
-    slug: "bhu-news-portal",
-    title: "BHU Public Relations Portal",
-    image: "/BHU-news_site.png",
+    slug: "bhu-digital-media-platform",
+    title: "BHU News Platform",
+    image: "/News_website.png",
     description: `
-Official digital media portal for Banaras Hindu University.
+A live, centralized platform built for Banaras Hindu University, powering the official news, achievements, initiatives, and institutional updates in one place.
 
-🛠️ Technologies Used
-Next.js, React, Tailwind CSS, Strapi, PostgreSQL, Redis, GraphQL.
+⚡ Key Impact
+- Independently built and deployed a live production platform serving thousands of users
+- Consolidated scattered university updates into a single, structured, and accessible system
+- Reduced page load time by ~40% using SSR and Redis caching
 
-💡 Key Impact
-- 40% improvement in page load time via SSR and Redis caching.
-- Dynamic content management for institutional news and events.
-    `.trim(),
+🧠 Core System
+- **Frontend Architecture**: High-performance UI built with Next.js, React, and Tailwind CSS
+- **Content Management Layer**: Strapi headless CMS with PostgreSQL for structured, dynamic content
+- **Performance Optimization**: Server-Side Rendering (SSR) and Redis caching for speed and SEO
+- **Scalable Deployment**: Designed to support multiple institutional portals under a unified system
+
+🛠️ Tech Stack
+Next.js · React · Tailwind CSS · Strapi · PostgreSQL · Redis
+
+💡 Outcome
+Created a single source of truth for university-wide communication, improving accessibility, transparency, and digital outreach.
+`.trim(),
     liveLink: "https://news.bhu.ac.in",
     githubLink: "https://github.com/Pratikkumar201",
     tags: ["Next.js", "Strapi", "Redis", "FullStack"]
@@ -92,19 +129,20 @@ Next.js, React, Tailwind CSS, Strapi, PostgreSQL, Redis, GraphQL.
     title: "Hindi Speech Sentiment Analyzer",
     image: "/politics-speech-analyzer.png",
     description: `
-NLP tool to process political speeches and extract sentiment/topic insights.
+Advanced NLP tool designed to process and analyze political speeches in Hindi, extracting sentiment and topic clusters.
 
-🛠️ Technologies Used
-Python, Scikit-learn, Pandas, Streamlit, TF-IDF.
+🛠️ Technologies & Methodology
+- TF-IDF vectorization and text clustering for topic discovery.
+- Sentiment analysis using Python, Pandas, and spaCy.
+- Interactive dashboard built with Streamlit for data visualization.
 
 💡 Key Impact
 - 70% reduction in manual speech analysis time.
-- Automated clustering of topics and speaker sentiment trends.
+- Delivers actionable insights into public opinion trends via automated sentiment tracking.
     `.trim(),
     githubLink: "https://github.com/Pratikkumar201",
-    tags: ["NLP", "Python", "SentimentAnalysis"]
+    tags: ["NLP", "Python", "SentimentAnalysis", "Streamlit"]
   }
 ];
 
 export default projects;
-

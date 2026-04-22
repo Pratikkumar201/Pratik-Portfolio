@@ -1,39 +1,10 @@
 'use client';
-import { Award, Briefcase, GraduationCap, Calendar } from 'lucide-react';
+import { Award, Briefcase, GraduationCap, Calendar, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import experiences from '@/data/experiences';
 
 export default function About() {
-  const experiences = [
-    {
-      title: "AI/ML Engineer (Intern)",
-      company: "National e-Governance Division (NeGD), MeitY",
-      period: "Feb 2026 – Present",
-      description: "Building production-grade GenAI apps and RAG pipelines for senior government leadership. Processing 17,000+ records with BERT & FAISS.",
-      icon: <Briefcase className="text-accent-cyan" size={20} />
-    },
-    {
-      title: "Software Developer",
-      company: "Information & PR Office, BHU",
-      period: "Mar 2025 – Jan 2026",
-      description: "Optimized institutional websites using Next.js & Strapi. Built NLP sentiment pipelines for public opinion tracking.",
-      icon: <Briefcase className="text-accent-blue" size={20} />
-    },
-    {
-      title: "Data Annotator (LLM)",
-      company: "Turing",
-      period: "Jun 2025 – Aug 2025",
-      description: "Annotated large-scale multimodal datasets for LLM training and fine-tuning at production scale.",
-      icon: <Award className="text-accent-cyan" size={20} />
-    },
-    {
-      title: "Software Developer",
-      company: "Revtrance Softwares LLP",
-      period: "Sep 2024 – Dec 2024",
-      description: "Developed full-stack features for SaaS products, optimizing APIs and database performance.",
-      icon: <Briefcase className="text-accent-blue" size={20} />
-    }
-  ];
-
   const education = [
     {
       degree: "Master of Computer Applications (MCA)",
@@ -128,21 +99,35 @@ export default function About() {
                     <div className="w-2 h-2 bg-accent-cyan rounded-full animate-glow" />
                   </div>
                   
-                  <motion.div 
-                    whileHover={{ x: 10 }}
-                    className="glass p-8 rounded-3xl cyber-border hover:bg-white/[0.05] transition-all"
-                  >
-                    <div className="flex flex-col md:flex-row justify-between md:items-center mb-4 gap-2">
-                      <h5 className="text-xl font-bold text-white tracking-tight">{exp.title}</h5>
-                      <span className="flex items-center gap-1 text-xs font-mono text-gray-400 bg-white/5 px-2 py-1 rounded-md">
-                        <Calendar size={12} /> {exp.period}
-                      </span>
-                    </div>
-                    <p className="text-accent-cyan font-medium text-sm mb-4">{exp.company}</p>
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                      {exp.description}
-                    </p>
-                  </motion.div>
+                  <Link href={`/experience/${exp.slug}`}>
+                    <motion.div 
+                      whileHover={{ x: 10 }}
+                      className="glass p-8 rounded-3xl cyber-border hover:bg-white/[0.05] transition-all group cursor-pointer"
+                    >
+                      <div className="flex flex-col md:flex-row justify-between md:items-center mb-4 gap-2">
+                        <div className="flex items-center gap-2">
+                          <h5 className="text-xl font-bold text-white tracking-tight group-hover:text-accent-cyan transition-colors">{exp.title}</h5>
+                          <ArrowUpRight size={16} className="text-gray-500 group-hover:text-accent-cyan group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                        </div>
+                        <span className="flex items-center gap-1 text-xs font-mono text-gray-400 bg-white/5 px-2 py-1 rounded-md">
+                          <Calendar size={12} /> {exp.period}
+                        </span>
+                      </div>
+                      <p className="text-accent-cyan font-medium text-sm mb-4">{exp.company}</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        {exp.description}
+                      </p>
+                      
+                      <div className="mt-4 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {exp.skills?.slice(0, 3).map(skill => (
+                          <span key={skill} className="text-[10px] font-bold uppercase tracking-wider text-gray-500 bg-white/5 px-2 py-1 rounded-md border border-white/5">
+                            {skill}
+                          </span>
+                        ))}
+                        {exp.skills?.length > 3 && <span className="text-[10px] font-bold text-gray-500">+{exp.skills.length - 3} more</span>}
+                      </div>
+                    </motion.div>
+                  </Link>
                 </motion.div>
               ))}
             </div>

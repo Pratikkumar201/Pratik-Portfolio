@@ -70,7 +70,7 @@ export default function Contact() {
           {/* Contact Info */}
           <motion.div variants={itemVariants} className="space-y-12">
             <div>
-              <h2 className="text-accent-cyan font-mono tracking-widest text-sm uppercase mb-3 text-center md:text-left">Inquiry</h2>
+              {/* <h2 className="text-accent-cyan font-mono tracking-widest text-sm uppercase mb-3 text-center md:text-left">Inquiry</h2> */}
               <motion.h3 className="text-4xl md:text-5xl font-bold tracking-tighter text-center md:text-left">
                 Let&apos;s <span className="text-gradient">Connect</span>
               </motion.h3>
@@ -139,7 +139,7 @@ export default function Contact() {
                   type="text"
                   name="name"
                   required
-                  placeholder="John Doe"
+                  placeholder="Enter your full name"
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full glass p-4 rounded-xl border-white/5 focus:border-accent-cyan outline-none transition-all placeholder:text-gray-700 bg-white/[0.02]"
@@ -152,7 +152,7 @@ export default function Contact() {
                   type="email"
                   name="email"
                   required
-                  placeholder="john@example.com"
+                  placeholder="you@company.com"
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full glass p-4 rounded-xl border-white/5 focus:border-accent-cyan outline-none transition-all placeholder:text-gray-700 bg-white/[0.02]"
