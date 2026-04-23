@@ -142,6 +142,56 @@ Advanced NLP tool designed to process and analyze political speeches in Hindi, e
     `.trim(),
     githubLink: "https://github.com/Pratikkumar201",
     tags: ["NLP", "Python", "SentimentAnalysis", "Streamlit"]
+  },
+  {
+    slug: "personal-portfolio",
+    title: "AI Engineer Portfolio",
+    image: "/portfolio.png",
+    description: `
+A high-end, interactive, and visually striking portfolio website designed to showcase professional AI and software engineering expertise.
+
+⚡ Key Impact
+- Built a premium, state-of-the-art interface with dynamic animations and responsive design
+- Integrated real-time visitor tracking and an automated contact system
+- Optimized for performance and SEO, achieving fast load times and high visibility
+
+🧠 Core Features
+- **Dynamic Project Showcase**: Interactive grid with detailed project views and tech stack tags
+- **Visitor Analytics**: Custom tracking system using MongoDB and Redis for real-time insights
+- **Modern Tech Stack**: Leveraging Next.js 14, React, and Tailwind CSS for a seamless UX
+- **Robust Communication**: Contact form integrated with Resend API for reliable email delivery
+
+🛠️ Tech Stack
+Next.js · React · Tailwind CSS · MongoDB · Redis · Resend · Framer Motion
+
+💡 Outcome
+Successfully created a professional digital identity that effectively communicates technical proficiency and creative design capabilities.
+`.trim(),
+    githubLink: "https://github.com/Pratikkumar201/portfolio",
+    tags: ["Next.js", "React", "MongoDB", "Redis", "Tailwind"]
+  },
+  {
+    slug: "chaukhat-blog",
+    title: "Chaukhat - Hindi Blog",
+    image: "/chaukhat1.png",
+    description: `
+A professional Hindi blog platform developed for a client, focusing on politics, commentary, travel, and personal reflections.
+
+⚡ Key Features
+- **Rich Content Management**: Built to handle diverse categories like Indian Politics, Travel Stories, and Life Insights
+- **Bilingual Interface**: Optimized for Hindi (Devanagari) script with modern typography
+- **Interactive Gallery**: Dedicated photo gallery section to showcase travel and event photography
+- **Responsive Design**: Seamless reading experience across mobile, tablet, and desktop devices
+
+🛠️ Tech Stack
+Next.js · React · Tailwind CSS · Strapi · PostgreSQL
+
+💡 Outcome
+Provided the client with a sophisticated, easy-to-manage digital space to share their voice and reach a wider Hindi-speaking audience.
+`.trim(),
+    liveLink: "https://www.chaukhat.co.in/",
+    githubLink: "https://github.com/Pratikkumar201",
+    tags: ["Next.js", "Strapi", "Hindi-Blog", "FullStack"]
   }
 ];
 
