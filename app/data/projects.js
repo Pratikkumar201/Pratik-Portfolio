@@ -206,7 +206,7 @@ const projects = [
   {
     slug: "mediguide-ai-medication-agent",
     title: "MediGuide — AI Medication Management Agent",
-    image: "/mediguide.png",
+    image: "/MediGuide.png",
     description: `
 A personal AI medication management agent built with Google ADK 2.0 and Gemini, developed as a capstone project for the Kaggle 5-Day AI Agents Intensive Vibe Coding Course with Google.
 
