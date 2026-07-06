@@ -202,6 +202,38 @@
 
 // app/data/projects.js
 const projects = [
+
+  {
+    slug: "mediguide-ai-medication-agent",
+    title: "MediGuide — AI Medication Management Agent",
+    image: "/mediguide.png",
+    description: `
+A personal AI medication management agent built with Google ADK 2.0 and Gemini, developed as a capstone project for the Kaggle 5-Day AI Agents Intensive Vibe Coding Course with Google.
+
+⚡ Key Impact
+- Built a multi-agent system that manages medications, checks drug safety, and tracks symptoms through natural language conversation
+- Integrated OpenFDA API as an MCP tool for real-time FDA drug label and interaction data
+- Implemented security guardrails including prompt injection prevention and medical topic validation
+- Deployed publicly on HuggingFace Spaces with encrypted API key management
+
+🧠 Core System
+- **Multi-Agent Architecture**: Root orchestrator + 3 specialist sub-agents (Scheduler, DrugQA, SymptomTracker) built with Google ADK 2.0
+- **MCP Tool Integration**: OpenFDA REST API wrapped as ADK FunctionTool for real-time drug safety data
+- **Persistent Memory**: SQLite-backed medication and symptom tracking with cross-session persistence
+- **Security Layer**: Input sanitization, prompt injection stripping, medical domain guardrail, and audit logging
+- **Gradio UI**: Three-tab conversational interface connected directly to ADK Runner
+
+🛠️ Tech Stack
+Google ADK 2.0 · Gemini · Gradio · OpenFDA API · SQLite · Python · HuggingFace Spaces
+
+💡 Outcome
+A fully deployed, production-ready AI agent demonstrating multi-agent orchestration, MCP tool use, persistent memory, security guardrails, and cloud deployment — covering 5 of 6 core concepts from the Kaggle AI Agents Intensive course.
+`.trim(),
+    liveLink: "https://huggingface.co/spaces/pratikkumar1234/MediGuide-v2",
+    githubLink: "https://github.com/Pratikkumar201/MediGuide-v2",
+    tags: ["Google-ADK", "Multi-Agent", "Gemini", "MCP", "Python", "Kaggle-Capstone"]
+  },
+
   {
     slug: "ai-expert-selection-system",
     title: "Expert Intelligence AI",

@@ -93,7 +93,7 @@ export default function Hero() {
             View Projects
           </a>
           <a
-            href="https://drive.google.com/file/d/1lNgtMAv7GwAtUEJ9yQx04B7SmOVxgAqM/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nT_01pYIM9cExVHnmjuhbnV1F3MmXMO_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="glass px-8 py-4 rounded-2xl font-bold flex items-center gap-2 hover:bg-white/5 transition-all active:scale-95"
